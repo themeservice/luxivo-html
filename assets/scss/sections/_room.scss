@@ -1,0 +1,134 @@
+
+/*======================
+    Room Section  CSS
+=======================*/
+
+.room-slider{
+    margin-left: -15px;
+    margin-right: -15px;
+    & .slick-slide{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+.luxivo-room-item{
+    &:hover{
+        & .room-image{
+            & .hover-content-wrap{
+                & .content{
+                    bottom: -100%;
+                }
+                & .hover-content{
+                    bottom: 20px;
+                }
+            }
+        }
+    }
+    & .room-image{
+        position: relative;
+        overflow: hidden;
+        & img{
+            width: 100%;
+            border-radius: 30px;
+        }
+        & .hover-content-wrap{
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            width: 100%;
+            height: 100%;
+            & .content{
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100%;
+                width: 90%;
+                border-radius: 20px;
+                background-color: rgba(109, 124, 106, 0.60);
+                backdrop-filter: blur(9px);
+                padding: 20px;
+                transition: all .3s;
+                & h4{
+                    margin-bottom: 15px;
+                    color: $white-color;
+                }
+                & .theme-btn{
+                    &.style-two{
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+        & .hover-content{
+            position: absolute;
+            bottom: -100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            width: 90%;
+            border-radius: 20px;
+            background-color: rgba(109, 124, 106, 0.60);
+            backdrop-filter: blur(9px);
+            padding: 20px;
+            transition: all .5s;
+            & .ratings{
+                margin-bottom: 10px;
+                & i{
+                    color: #FF9500;
+                }
+            }
+            & h4{
+                margin-bottom: 20px;
+                color: $white-color;
+            }
+            & .price{
+                color: $white-color;
+                font-size: 36px;
+                font-weight: 400;
+                font-family: $heading-font;
+                margin-bottom: 5px;
+                & span{
+                    font-family: $body-font;
+                    font-size: 16px;
+                }
+            }
+            & .room-meta{
+                padding: 10px 0;
+                border-top: 1px solid $border-color;
+                border-bottom: 1px solid $border-color;
+                margin-bottom: 30px;
+                & span{
+                    color: $white-color;
+                    & i{
+                        margin-right: 10px;
+                    }
+                    &:not(:last-child){
+                        margin-right: 20px;
+                    }
+                }
+            }
+            & .theme-btn{
+                &.style-two{
+                    color: $white-color;
+                }
+            }
+        }
+    }
+}
+
+.luxivo-room-sec{
+    & .container-fluid{
+        padding-left: 150px;
+        padding-right: 150px;
+        @include respond(xxxl){
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        @include respond(xl){
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+
+
+/*======================
+    Faq Section  CSS
+=======================*/
+
+
+.accordion-card{
+    border-bottom: 1px solid $border-color;
+    & .accordion-header{
+        & .accordion-title{
+            display: flex;
+            align-items: center;
+            padding-bottom: 20px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+    }
+    & .accordion-content{
+        padding-bottom: 20px;
+    }
+}

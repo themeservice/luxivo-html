@@ -1,0 +1,44 @@
+
+/*======================
+    Counter Section  CSS
+=======================*/
+
+.luxivo-counter_one{
+    position: relative;
+    z-index: 1;
+    &:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(22, 25, 33, 0.80);
+        z-index: -1;
+    }
+    & .luxivo-counter-item{
+        &.style-one{
+            & .content{
+                & h2{
+                    color: $white-color;
+                }
+                & p{
+                    color: $white-color;
+                }
+            }
+        }
+    }
+}
+.luxivo-counter-item{
+    &.style-one{
+        & .content{
+            & h2{
+                font-size: 64px;
+            }
+            & p{
+                font-weight: 600;
+                font-size: 20px;
+            }
+        }
+    }
+}

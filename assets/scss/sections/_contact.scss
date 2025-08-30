@@ -1,0 +1,129 @@
+
+/*========================
+    Contact Section  CSS
+==========================*/
+
+.luxivo-contact_one{
+    position: relative;
+    background-color: $gray-color;
+    & .booking-wrapper{
+        background-color: $white-color;
+        padding: 60px 70px;
+        border-radius: 30px;
+        position: relative;
+        & .booking-form{
+            & .form_control{
+                padding: 12px 25px;
+                border: 1px solid $border-color;
+                border-radius: 20px;
+                margin-bottom: 30px;
+            }
+            & .theme-btn{
+                width: 100%;
+            }
+        }
+    }
+    & .contact-bg-left{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        padding: 60px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        & .luxivo-info-box{
+            background-color: $primary-black-color;
+            padding: 30px;
+            border-radius: 30px;
+            max-width: 335px;
+            text-align: center;
+            & span{
+                color: $white-color;
+                margin-bottom: 10px;
+            }
+            & h3{
+                color: $white-color;
+            }
+        }
+    }
+    & .contact-bg-right{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+        height: 100%;
+        opacity: .05;
+    }
+}
+
+
+.contact-info-wrapper{
+    background-color: #6D7C6A;
+    border-radius: 30px;
+    padding: 40px;
+    & .contact-info-box{
+        border: 1px solid $white-color;
+        border-radius: 20px;
+        padding: 35px 30px 40px;
+        & .bizzen-info-box{
+            &:not(:last-child){
+                margin-bottom: 50px;
+            }
+            &:last-child{
+                & .content{
+                    & h3{
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            & .content{
+                & h3{
+                    color: $white-color;
+                    margin-bottom: 10px;
+                }
+                & p{
+                    color: $white-color;
+                }
+                & .social-box{
+                    & a{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        border: 1px solid #D8DDE1;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: $white-color;
+                        margin-left: 5px;
+                        margin-right: 5px;
+                        &:hover{
+                            background-color: $white-color;
+                            color: $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.contact-form-wrapper{
+    padding-left: 30px;
+    & .contact-form{
+        & .form_control{
+            padding: 12px 25px;
+            border: 1px solid $border-color;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.luxivo-map-sec{
+    & .map-box{
+        & iframe{
+            height: 660px;
+        }
+    }
+}
