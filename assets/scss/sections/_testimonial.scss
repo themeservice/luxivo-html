@@ -3,6 +3,51 @@
     Testimonial Section  CSS
 =============================*/
 
+.luxivo-testimonial_two{
+    & .container-fluid{
+        padding-left: 95px;
+        padding-right: 95px;
+    }
+    & .testimonial-slider-two{
+        margin-left: -15px;
+        margin-right: -15px;
+        & .slick-slide{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+}
+
+
+.luxivo-testimonial_three{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    &:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(270deg, #F8F8F8 0.55%, rgba(248, 248, 248, 0.88) 30.67%, rgba(248, 248, 248, 0.94) 60.16%, rgba(248, 248, 248, 0.00) 222.62%);
+        z-index: -1;
+    }
+    & .testimonial-left-bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 47%;
+        height: 100%;
+    }
+    & .testimonial-wrapper{
+        margin-right: -80%;
+        & .luxivo-testimonial-item{
+            margin-right: 30px;
+        }
+    }
+}
+
 
 .testimonial-slider{
     margin-left: -30px;
@@ -32,6 +77,44 @@
             border-top: 4px solid;
             border-color: $primary-color;
         }
+        & .testimonial-content{
+            & .ratings-quote-wrap{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 25px;
+                & .quote{
+                    & i{
+                        color: $primary-color;
+                        font-size: 36px;
+                    }
+                }
+                & .ratings{
+                    & i{
+                        color: #FF9500;
+                    }
+                }
+            }
+            & p{
+                margin-bottom: 35px;
+            }
+            & .author-thumb-item{
+                & .author-thumb{
+                    flex: 0 0 auto;
+                    margin-right: 20px;
+                    & img{
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+    &.style-two{
+        padding: 40px;
+        border-radius: 30px;
+        background-color: $white-color;
         & .testimonial-content{
             & .ratings-quote-wrap{
                 display: flex;

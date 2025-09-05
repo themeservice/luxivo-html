@@ -2,6 +2,66 @@
 /*======================
     Service Section  CSS
 =======================*/
+
+
+.luxivo-service-item{
+    &.style-one{
+        background-color: $gray-color;
+        border-radius: 30px;
+        padding: 20px;
+        &:hover{
+            & .service-content{
+                & .icon{
+                    background-color: $primary-color;
+                    & .main-icon{
+                        opacity: 0;
+                    }
+                    & .hover-icon{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        & .service-content{
+            padding: 20px 0;
+            & .icon-title-wrap{
+                display: flex;
+                align-items: center;
+            }
+            & .icon{
+                flex: 0 0 auto;
+                position: relative;
+                width: 60px;
+                height: 60px;
+                border-radius: 20px;
+                background-color: $white-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 15px;
+                transition: all .3s;
+                & .hover-icon{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    opacity: 0;
+                    transition: all .35s;
+                }
+            }
+        }
+        & .service-thumbnail{
+            & img{
+                width: 100%;
+                border-radius: 30px;
+            }
+        }
+    }
+}
+
+
+
+
 .luxivo-features-sec{
     & .container-fluid{
         padding-left: 150px;

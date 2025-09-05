@@ -101,4 +101,38 @@
             }
         }
     }
+    &.style-two{
+        text-align: center;
+        & .icon{
+            margin-bottom: 25px;
+        }
+        & .content{
+            & h4{
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+
+.luxivo-choose_two{
+    position: relative;
+    z-index: 1;
+    &:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 60%;
+        height: 100%;
+        border-radius: 30px;
+        background-color: $gray-color;
+        z-index: -1;
+        transform: perspective(1000px) rotateY(3deg) rotateX(1deg);
+    }
+    & .luxivo-image{
+        & img{
+            border-radius: 30px;
+        }
+    }
 }

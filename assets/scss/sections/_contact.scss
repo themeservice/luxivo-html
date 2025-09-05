@@ -3,6 +3,63 @@
     Contact Section  CSS
 ==========================*/
 
+.luxivo-contact_three{
+    position: relative;
+    z-index: 1;
+    &:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(22, 25, 33, 0.89);
+        z-index: -1;
+    }
+    & .contact-wrapper{
+        padding: 110px 60px 120px;
+        background-color: rgba(255, 255, 255, 0.14);
+        backdrop-filter: blur(22px);
+    }
+    & .booking-form{
+        & label{
+            color: #D8D8DC;
+            display: block;
+            margin-bottom: 10px;
+        }
+        & .form_control,
+        & .nice-select{
+            background-color: transparent;
+            border: 1px solid #D8DDE1;
+            color: #D8D8DC;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        & .nice-select{
+            & .list{
+                & li{
+                    color: $heading-color;
+                }
+            }
+        }
+        & .form_control{
+            &::placeholder{
+                color: #D8D8DC;
+            }
+        }
+        & .theme-btn{
+            width: 100%;
+        }
+    }
+    & .map-box{
+        & iframe{
+            height: 750px;
+            border-radius: 30px;
+        }
+    }
+}
+
 .luxivo-contact_one{
     position: relative;
     background-color: $gray-color;

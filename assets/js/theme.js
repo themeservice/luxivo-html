@@ -199,30 +199,26 @@
         });
     }
     if ($('.testimonial-slider-two').length) {
-        var sliderArrows = $('.testimonial-arrows');
         $('.testimonial-slider-two').slick({
             dots: false,
-            arrows: true,
+            arrows: false,
             infinite: true,
             speed: 800,
-            appendArrows: sliderArrows,
             autoplay: true,
-            slidesToShow: 1,
+            slidesToShow: 4,
             slidesToScroll: 1,
             prevArrow: '<div class="prev"><i class="far fa-arrow-left"></i></div>',
             nextArrow: '<div class="next"><i class="far fa-arrow-right"></i></div>'
         });
     }
     if ($('.testimonial-slider-three').length) {
-        var sliderArrows = $('.testimonial-arrows');
         $('.testimonial-slider-three').slick({
             dots: false,
-            arrows: true,
+            arrows: false,
             infinite: true,
             speed: 800,
-            appendArrows: sliderArrows,
             autoplay: true,
-            slidesToShow: 3,
+            slidesToShow: 2,
             slidesToScroll: 1,
             prevArrow: '<div class="prev"><i class="far fa-arrow-left"></i></div>',
             nextArrow: '<div class="next"><i class="far fa-arrow-right"></i></div>',
@@ -275,7 +271,33 @@
             ]
         });
     }
-
+    if ($('.gallery-slider-two').length) {
+        $('.gallery-slider-two').slick({
+            dots: false,
+            arrows: false,
+            infinite: true,
+            speed: 800,
+            autoplay: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            prevArrow: '<div class="prev"><i class="far fa-angle-left"></i></div>',
+            nextArrow: '<div class="next"><i class="far fa-angle-right"></i></div>',
+            responsive: [
+				{
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    }
     // ===== Counter
 
 	if ($('.counter').length) {
@@ -368,29 +390,13 @@
         }
     });
 
-    
-    //====== Pricing Js
 
-    $("#pricingBox").change(function () {
-        if ($(this).is(":checked")) {
-            $(".price").each(function () {
-                var yearPrice = $(this).data("year");
-                $(this).html('<span class="currency">$</span>' + yearPrice + '<span class="duration">/Year</span>');
-            });
-        } else {
-            $(".price").each(function () {
-                var monthPrice = $(this).data("month");
-                $(this).html('<span class="currency">$</span>' + monthPrice + '<span class="duration">/Month</span>');
-            });
-        }
-    });
-
-    //====== Item Active
-    $(".bizzen-process-item.style-two").hover(function() {
-        $(".bizzen-process-item.style-two").removeClass("item-active");
-        $(this).addClass("item-active");
-    });
+    //===== Nice select js
     
+    if ($('select').length){
+        $('select').niceSelect();
+    }
+
     //====== Aos 
     
     AOS.init({

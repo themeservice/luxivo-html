@@ -95,6 +95,105 @@
 }
 
 
+
+/* Hero Two */ 
+
+.hero-wrapper-two{
+    position: relative;
+    z-index: 1;
+    padding-top: 200px;
+    &:before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 50%;
+        background-color: $primary-black-color;
+        z-index: -1;
+    }
+    &:after{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 50%;
+        background-color: $gray-color;
+        z-index: -1;
+    }
+    & .single-slider{
+        padding: 220px 0 230px;
+        position: relative;
+        z-index: 1;
+        border-radius: 50px;
+        overflow: hidden;
+    }
+    & .image-layer{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 1.4s cubic-bezier(0.7, 0, 0.3, 1);
+        @include transform(scale(1.2));
+        z-index: -1;
+        &:after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #000 -12.38%, rgba(0, 0, 0, 0.00) 117.3%);
+            z-index: -1;
+        }
+    }
+    &.slick-current{
+        & .image-layer{
+            @include transform(scale(1));
+        }
+    }
+    & .container-fluid{
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    & .hero-content{
+        @include respond(lg){
+            text-align: center;
+        }
+        & span{
+            color: $white-color;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+        & h1{
+            font-weight: 400;
+            color: $white-color;
+            margin-bottom: 20px;
+            font-size: 84px;
+            & span{
+                font-weight: 700;
+            }
+            @include respond(xxxl){
+                font-size: 70px;
+            }
+            @include respond(md){
+                font-size: 36px;
+                line-height: 1.5em;
+            }
+        }
+        & p{
+            max-width: 610px;
+            color: $white-color;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+
 /* Page Hero */
 
 .page-hero{

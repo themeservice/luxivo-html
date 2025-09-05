@@ -3,3 +3,126 @@
     About Section  CSS
 =======================*/
 
+.luxivo-iconic-box{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid $border-color;
+    background-color: #FEF9F4;
+    padding: 20px;
+    & .icon{
+        width: 60px;
+        height: 60px;
+        background-color: $white-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 auto;
+        border-radius: 20px;
+        padding: 10px;
+        margin-right: 16px;
+    }
+}
+
+
+
+.luxivo-about_two{
+    & .luxivo-image-box{
+        position: relative;
+        min-height: 580px;
+        position: relative;
+        margin-right: 30px;
+        & .luxivo-image{
+            &.image_two{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+}
+.luxivo-about_three{
+    background-color: $gray-color;
+}
+.luxivo-about-sec{
+    & .container-fluid{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    & .gallery-slider-two{
+        margin-left: -15px;
+        margin-right: -15px;
+        & .slick-slide{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+}
+.luxivo-about-content-box{
+    & p{
+        margin-bottom: 25px;
+    }
+}
+
+.luxivo-facilities-sec{
+    position: relative;
+    z-index: 1;
+    &:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: rgba(22, 25, 33, 0.60);
+    }
+    & .facilities-wrapper{
+        background-color: $white-color;
+        border-radius: 30px;
+        padding: 60px 60px 20px;
+    }
+}
+
+.luxivo-icon-left-box{
+    display: flex;
+    &:hover{
+        & .icon{
+            background-color: $primary-color;
+            border-color: transparent;
+            & .main-icon{
+                opacity: 0;
+            }
+            & .hover-icon{
+                opacity: 1;
+            }
+        }
+    }
+    & .icon{
+        position: relative;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 auto;
+        margin-right: 15px;
+        border: 1px solid $border-color;
+        background-color: transparent;
+        transition: all .3s;
+        & .hover-icon{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            opacity: 0;
+            transition: all .35s;
+        }
+    }
+    & .content{
+        & h4{
+            margin-bottom: 10px;
+        }
+    }
+}

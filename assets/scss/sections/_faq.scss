@@ -4,6 +4,17 @@
     Faq Section  CSS
 =======================*/
 
+.luxivo-faq_two{
+    & .luxivo-image{
+        margin-right: -55px;
+        & img{
+            border-radius: 30px;
+        }
+    }
+    & .luxivo-content-box{
+        padding-left: 80px;
+    }
+}
 
 .accordion-card{
     border-bottom: 1px solid $border-color;
@@ -18,5 +29,58 @@
     }
     & .accordion-content{
         padding-bottom: 20px;
+    }
+    &.style-two{
+        border: 1px solid $border-color;
+        padding: 20px 30px;
+        border-radius: 20px;
+        & .accordion-header{
+            & .accordion-title{
+                padding-bottom: 0;
+                &:after{
+                    flex: 0 0 auto;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    content: '\f107';
+                    font-family: 'Font Awesome 5 Pro';
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: $primary-color;
+                    margin-left: auto;
+                    transition: all .3s;
+                }
+            }
+            & .accordion-title[aria-expanded=true]{
+                padding-bottom: 20px;
+                border-bottom: 1px solid $border-color;
+                margin-bottom: 20px;
+                &:after{
+                    transform: rotate(-180deg);
+                }
+            }
+        }
+        & .accordion-content{
+            padding-bottom: 0;
+        }
+    }
+}
+
+
+.luxivo-offer-sec{
+    & .luxivo-image{
+        & img{
+            border-radius: 250px;
+        }
+    }
+    & .luxivo-content-item{
+        border: 1px solid $border-color;
+        padding: 15px 24px;
+        border-radius: 20px;
+        & .content{
+            & h5{
+                margin-bottom: 20px;
+            }
+        }
     }
 }

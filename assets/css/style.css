@@ -1422,6 +1422,108 @@ label {
   color: var(--white-color);
 }
 
+/* Hero Two */
+.hero-wrapper-two {
+  position: relative;
+  z-index: 1;
+  padding-top: 200px;
+}
+.hero-wrapper-two:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 50%;
+  background-color: var(--primary-black-color);
+  z-index: -1;
+}
+.hero-wrapper-two:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 50%;
+  background-color: var(--gray-color);
+  z-index: -1;
+}
+.hero-wrapper-two .single-slider {
+  padding: 220px 0 230px;
+  position: relative;
+  z-index: 1;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.hero-wrapper-two .image-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 1.4s cubic-bezier(0.7, 0, 0.3, 1);
+  transition: all 1.4s cubic-bezier(0.7, 0, 0.3, 1);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: -1;
+}
+.hero-wrapper-two .image-layer:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(-12.38%, #000), color-stop(117.3%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(90deg, #000 -12.38%, rgba(0, 0, 0, 0) 117.3%);
+  z-index: -1;
+}
+.hero-wrapper-two.slick-current .image-layer {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.hero-wrapper-two .container-fluid {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+@media screen and (max-width: 991.98px) {
+  .hero-wrapper-two .hero-content {
+    text-align: center;
+  }
+}
+.hero-wrapper-two .hero-content span {
+  color: var(--white-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.hero-wrapper-two .hero-content h1 {
+  font-weight: 400;
+  color: var(--white-color);
+  margin-bottom: 20px;
+  font-size: 84px;
+}
+.hero-wrapper-two .hero-content h1 span {
+  font-weight: 700;
+}
+@media (max-width: 1650px) {
+  .hero-wrapper-two .hero-content h1 {
+    font-size: 70px;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero-wrapper-two .hero-content h1 {
+    font-size: 36px;
+    line-height: 1.5em;
+  }
+}
+.hero-wrapper-two .hero-content p {
+  max-width: 610px;
+  color: var(--white-color);
+  margin-bottom: 40px;
+}
+
 /* Page Hero */
 .page-hero {
   padding: 180px 0 90px;
@@ -1473,6 +1575,144 @@ label {
 /*======================
     About Section  CSS
 =======================*/
+.luxivo-iconic-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  background-color: #FEF9F4;
+  padding: 20px;
+}
+.luxivo-iconic-box .icon {
+  width: 60px;
+  height: 60px;
+  background-color: var(--white-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  border-radius: 20px;
+  padding: 10px;
+  margin-right: 16px;
+}
+
+.luxivo-about_two .luxivo-image-box {
+  position: relative;
+  min-height: 580px;
+  position: relative;
+  margin-right: 30px;
+}
+.luxivo-about_two .luxivo-image-box .luxivo-image.image_two {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.luxivo-about_three {
+  background-color: var(--gray-color);
+}
+
+.luxivo-about-sec .container-fluid {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.luxivo-about-sec .gallery-slider-two {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.luxivo-about-sec .gallery-slider-two .slick-slide {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.luxivo-about-content-box p {
+  margin-bottom: 25px;
+}
+
+.luxivo-facilities-sec {
+  position: relative;
+  z-index: 1;
+}
+.luxivo-facilities-sec:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(22, 25, 33, 0.6);
+}
+.luxivo-facilities-sec .facilities-wrapper {
+  background-color: var(--white-color);
+  border-radius: 30px;
+  padding: 60px 60px 20px;
+}
+
+.luxivo-icon-left-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.luxivo-icon-left-box:hover .icon {
+  background-color: var(--primary-color);
+  border-color: transparent;
+}
+.luxivo-icon-left-box:hover .icon .main-icon {
+  opacity: 0;
+}
+.luxivo-icon-left-box:hover .icon .hover-icon {
+  opacity: 1;
+}
+.luxivo-icon-left-box .icon {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin-right: 15px;
+  border: 1px solid var(--border-color);
+  background-color: transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.luxivo-icon-left-box .icon .hover-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.luxivo-icon-left-box .content h4 {
+  margin-bottom: 10px;
+}
+
 /*======================
     Features Section  CSS
 =======================*/
@@ -1568,10 +1808,102 @@ label {
   background-color: var(--white-color);
   color: var(--heading-color);
 }
+.luxivo-feature-item.style-two {
+  text-align: center;
+}
+.luxivo-feature-item.style-two .icon {
+  margin-bottom: 25px;
+}
+.luxivo-feature-item.style-two .content h4 {
+  margin-bottom: 15px;
+}
+
+.luxivo-choose_two {
+  position: relative;
+  z-index: 1;
+}
+.luxivo-choose_two:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 60%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: var(--gray-color);
+  z-index: -1;
+  -webkit-transform: perspective(1000px) rotateY(3deg) rotateX(1deg);
+          transform: perspective(1000px) rotateY(3deg) rotateX(1deg);
+}
+.luxivo-choose_two .luxivo-image img {
+  border-radius: 30px;
+}
 
 /*======================
     Service Section  CSS
 =======================*/
+.luxivo-service-item.style-one {
+  background-color: var(--gray-color);
+  border-radius: 30px;
+  padding: 20px;
+}
+.luxivo-service-item.style-one:hover .service-content .icon {
+  background-color: var(--primary-color);
+}
+.luxivo-service-item.style-one:hover .service-content .icon .main-icon {
+  opacity: 0;
+}
+.luxivo-service-item.style-one:hover .service-content .icon .hover-icon {
+  opacity: 1;
+}
+.luxivo-service-item.style-one .service-content {
+  padding: 20px 0;
+}
+.luxivo-service-item.style-one .service-content .icon-title-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.luxivo-service-item.style-one .service-content .icon {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  background-color: var(--white-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 15px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.luxivo-service-item.style-one .service-content .icon .hover-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.luxivo-service-item.style-one .service-thumbnail img {
+  width: 100%;
+  border-radius: 30px;
+}
+
 .luxivo-features-sec .container-fluid {
   padding-left: 150px;
   padding-right: 150px;
@@ -2111,6 +2443,19 @@ label {
 /*======================
     Room Section  CSS
 =======================*/
+.luxivo-room-wrapper .luxivo-room-item.style-three:nth-child(even) .row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.luxivo-room-wrapper .luxivo-room-item.style-three .room-content {
+  padding-left: 0;
+}
+.luxivo-room-wrapper .luxivo-room-item.style-three .room-image {
+  padding-right: 30px;
+}
+
 .room-slider {
   margin-left: -15px;
   margin-right: -15px;
@@ -2120,21 +2465,135 @@ label {
   margin-right: 15px;
 }
 
-.luxivo-room-item:hover .room-image .hover-content-wrap .content {
+.luxivo-iconic-left-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.luxivo-iconic-left-box .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid var(--border-color);
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  margin-right: 15px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.luxivo-room-item.style-two .room-image img {
+  border-radius: 30px;
+}
+.luxivo-room-item.style-two .room-content {
+  position: relative;
+  border-radius: 30px;
+  background-color: var(--white-color);
+  padding: 30px 25px;
+  margin-top: -55px;
+}
+.luxivo-room-item.style-two .room-content .price-rating-wrap {
+  padding-bottom: 25px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.luxivo-room-item.style-two .room-content .price-rating-wrap .ratings i {
+  color: #FF9500;
+  font-size: 14px;
+}
+.luxivo-room-item.style-two .room-content .price-rating-wrap .price {
+  font-size: 24px;
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+.luxivo-room-item.style-two .room-content .price-rating-wrap .price span {
+  font-size: 16px;
+  color: var(--text-color);
+  font-family: var(--body-font);
+}
+.luxivo-room-item.style-two .room-content .title {
+  margin-bottom: 20px;
+}
+.luxivo-room-item.style-two .room-content .check-list {
+  margin-bottom: 20px;
+}
+.luxivo-room-item.style-two .room-content .check-list li {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.luxivo-room-item.style-two .room-content p {
+  margin-bottom: 25px;
+}
+.luxivo-room-item.style-three .room-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 30px;
+}
+.luxivo-room-item.style-three .room-image img {
+  border-radius: 30px;
+}
+.luxivo-room-item.style-three .room-content {
+  padding-left: 25px;
+}
+.luxivo-room-item.style-three .room-content .sub-title {
+  margin-bottom: 15px;
+}
+.luxivo-room-item.style-three .room-content .title {
+  margin-bottom: 20px;
+}
+.luxivo-room-item.style-three .room-content p {
+  margin-bottom: 25px;
+}
+.luxivo-room-item.style-three .room-content .price {
+  font-family: var(--heading-font);
+  color: var(--heading-color);
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+.luxivo-room-item.style-three .room-content .price span {
+  font-size: 16px;
+  color: var(--text-color);
+  font-family: var(--body-font);
+}
+.luxivo-room-item.style-four:hover .room-image .hover-content-wrap .content {
   bottom: -100%;
 }
-.luxivo-room-item:hover .room-image .hover-content-wrap .hover-content {
+.luxivo-room-item.style-four:hover .room-image .hover-content-wrap .hover-content {
   bottom: 20px;
 }
-.luxivo-room-item .room-image {
+.luxivo-room-item.style-four .room-image {
   position: relative;
   overflow: hidden;
 }
-.luxivo-room-item .room-image img {
+.luxivo-room-item.style-four .room-image img {
   width: 100%;
   border-radius: 30px;
 }
-.luxivo-room-item .room-image .hover-content-wrap {
+.luxivo-room-item.style-four .room-image .hover-content-wrap {
   position: absolute;
   top: 0;
   left: 0;
@@ -2142,7 +2601,7 @@ label {
   width: 100%;
   height: 100%;
 }
-.luxivo-room-item .room-image .hover-content-wrap .content {
+.luxivo-room-item.style-four .room-image .hover-content-wrap .content {
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -2157,14 +2616,14 @@ label {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.luxivo-room-item .room-image .hover-content-wrap .content h4 {
+.luxivo-room-item.style-four .room-image .hover-content-wrap .content h4 {
   margin-bottom: 15px;
   color: var(--white-color);
 }
-.luxivo-room-item .room-image .hover-content-wrap .content .theme-btn.style-two {
+.luxivo-room-item.style-four .room-image .hover-content-wrap .content .theme-btn.style-two {
   color: var(--white-color);
 }
-.luxivo-room-item .room-image .hover-content {
+.luxivo-room-item.style-four .room-image .hover-content {
   position: absolute;
   bottom: -100%;
   left: 50%;
@@ -2179,43 +2638,43 @@ label {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-.luxivo-room-item .room-image .hover-content .ratings {
+.luxivo-room-item.style-four .room-image .hover-content .ratings {
   margin-bottom: 10px;
 }
-.luxivo-room-item .room-image .hover-content .ratings i {
+.luxivo-room-item.style-four .room-image .hover-content .ratings i {
   color: #FF9500;
 }
-.luxivo-room-item .room-image .hover-content h4 {
+.luxivo-room-item.style-four .room-image .hover-content h4 {
   margin-bottom: 20px;
   color: var(--white-color);
 }
-.luxivo-room-item .room-image .hover-content .price {
+.luxivo-room-item.style-four .room-image .hover-content .price {
   color: var(--white-color);
   font-size: 36px;
   font-weight: 400;
   font-family: var(--heading-font);
   margin-bottom: 5px;
 }
-.luxivo-room-item .room-image .hover-content .price span {
+.luxivo-room-item.style-four .room-image .hover-content .price span {
   font-family: var(--body-font);
   font-size: 16px;
 }
-.luxivo-room-item .room-image .hover-content .room-meta {
+.luxivo-room-item.style-four .room-image .hover-content .room-meta {
   padding: 10px 0;
   border-top: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
   margin-bottom: 30px;
 }
-.luxivo-room-item .room-image .hover-content .room-meta span {
+.luxivo-room-item.style-four .room-image .hover-content .room-meta span {
   color: var(--white-color);
 }
-.luxivo-room-item .room-image .hover-content .room-meta span i {
+.luxivo-room-item.style-four .room-image .hover-content .room-meta span i {
   margin-right: 10px;
 }
-.luxivo-room-item .room-image .hover-content .room-meta span:not(:last-child) {
+.luxivo-room-item.style-four .room-image .hover-content .room-meta span:not(:last-child) {
   margin-right: 20px;
 }
-.luxivo-room-item .room-image .hover-content .theme-btn.style-two {
+.luxivo-room-item.style-four .room-image .hover-content .theme-btn.style-two {
   color: var(--white-color);
 }
 
@@ -2316,6 +2775,16 @@ label {
 /*======================
     Faq Section  CSS
 =======================*/
+.luxivo-faq_two .luxivo-image {
+  margin-right: -55px;
+}
+.luxivo-faq_two .luxivo-image img {
+  border-radius: 30px;
+}
+.luxivo-faq_two .luxivo-content-box {
+  padding-left: 80px;
+}
+
 .accordion-card {
   border-bottom: 1px solid var(--border-color);
 }
@@ -2332,6 +2801,60 @@ label {
 }
 .accordion-card .accordion-content {
   padding-bottom: 20px;
+}
+.accordion-card.style-two {
+  border: 1px solid var(--border-color);
+  padding: 20px 30px;
+  border-radius: 20px;
+}
+.accordion-card.style-two .accordion-header .accordion-title {
+  padding-bottom: 0;
+}
+.accordion-card.style-two .accordion-header .accordion-title:after {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  content: "\f107";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--primary-color);
+  margin-left: auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.accordion-card.style-two .accordion-header .accordion-title[aria-expanded=true] {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 20px;
+}
+.accordion-card.style-two .accordion-header .accordion-title[aria-expanded=true]:after {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.accordion-card.style-two .accordion-content {
+  padding-bottom: 0;
+}
+
+.luxivo-offer-sec .luxivo-image img {
+  border-radius: 250px;
+}
+.luxivo-offer-sec .luxivo-content-item {
+  border: 1px solid var(--border-color);
+  padding: 15px 24px;
+  border-radius: 20px;
+}
+.luxivo-offer-sec .luxivo-content-item .content h5 {
+  margin-bottom: 20px;
 }
 
 /*======================
@@ -2485,6 +3008,49 @@ label {
 /*============================
     Testimonial Section  CSS
 =============================*/
+.luxivo-testimonial_two .container-fluid {
+  padding-left: 95px;
+  padding-right: 95px;
+}
+.luxivo-testimonial_two .testimonial-slider-two {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.luxivo-testimonial_two .testimonial-slider-two .slick-slide {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.luxivo-testimonial_three {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.luxivo-testimonial_three:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, right top, left top, color-stop(0.55%, #F8F8F8), color-stop(30.67%, rgba(248, 248, 248, 0.88)), color-stop(60.16%, rgba(248, 248, 248, 0.94)), color-stop(222.62%, rgba(248, 248, 248, 0)));
+  background: linear-gradient(270deg, #F8F8F8 0.55%, rgba(248, 248, 248, 0.88) 30.67%, rgba(248, 248, 248, 0.94) 60.16%, rgba(248, 248, 248, 0) 222.62%);
+  z-index: -1;
+}
+.luxivo-testimonial_three .testimonial-left-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 47%;
+  height: 100%;
+}
+.luxivo-testimonial_three .testimonial-wrapper {
+  margin-right: -80%;
+}
+.luxivo-testimonial_three .testimonial-wrapper .luxivo-testimonial-item {
+  margin-right: 30px;
+}
+
 .testimonial-slider {
   margin-left: -30px;
   margin-right: -30px;
@@ -2553,6 +3119,44 @@ label {
   height: 60px;
   border-radius: 50%;
 }
+.luxivo-testimonial-item.style-two {
+  padding: 40px;
+  border-radius: 30px;
+  background-color: var(--white-color);
+}
+.luxivo-testimonial-item.style-two .testimonial-content .ratings-quote-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+.luxivo-testimonial-item.style-two .testimonial-content .ratings-quote-wrap .quote i {
+  color: var(--primary-color);
+  font-size: 36px;
+}
+.luxivo-testimonial-item.style-two .testimonial-content .ratings-quote-wrap .ratings i {
+  color: #FF9500;
+}
+.luxivo-testimonial-item.style-two .testimonial-content p {
+  margin-bottom: 35px;
+}
+.luxivo-testimonial-item.style-two .testimonial-content .author-thumb-item .author-thumb {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin-right: 20px;
+}
+.luxivo-testimonial-item.style-two .testimonial-content .author-thumb-item .author-thumb img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
 
 /*======================
     Blog Section  CSS
@@ -2607,6 +3211,71 @@ label {
 }
 .luxivo-blog-post-item.style-two .post-content p {
   margin-bottom: 30px;
+}
+.luxivo-blog-post-item.style-three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.luxivo-blog-post-item.style-three .post-thumbnail {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  max-width: 185px;
+  width: 100%;
+  margin-right: 30px;
+}
+.luxivo-blog-post-item.style-three .post-thumbnail img {
+  border-radius: 20px;
+  width: 100%;
+}
+.luxivo-blog-post-item.style-three .post-thumbnail .date {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 30px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 500;
+}
+.luxivo-blog-post-item.style-three .post-content .post-meta {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+.luxivo-blog-post-item.style-four .post-thumbnail {
+  position: relative;
+}
+.luxivo-blog-post-item.style-four .post-thumbnail .date {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 30px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 500;
+}
+.luxivo-blog-post-item.style-four .post-thumbnail img {
+  border-radius: 30px;
+  width: 100%;
+}
+.luxivo-blog-post-item.style-four .post-content {
+  padding-top: 20px;
+}
+.luxivo-blog-post-item.style-four .post-content .post-meta {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
 }
 
 /* Sidebar Widget Area */
@@ -2957,9 +3626,140 @@ label {
 /*========================
     CTA Section  CSS
 ==========================*/
+.luxivo-cta-sec {
+  position: relative;
+  z-index: 1;
+}
+.luxivo-cta-sec:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(22, 25, 33, 0.7);
+  z-index: -1;
+}
+
+.luxivo-newsletter-sec {
+  position: relative;
+  z-index: 1;
+}
+.luxivo-newsletter-sec:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(22, 25, 33, 0.8);
+  z-index: -1;
+}
+.luxivo-newsletter-sec .newsletter-form-box p {
+  color: var(--white-color);
+  margin-bottom: 25px;
+}
+.luxivo-newsletter-sec .newsletter-form-box .form_control {
+  padding: 13px 25px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid #404A4E;
+  color: var(--white-color);
+  font-size: 14px;
+}
+.luxivo-newsletter-sec .newsletter-form-box .form_control::-webkit-input-placeholder {
+  color: var(--white-color);
+}
+.luxivo-newsletter-sec .newsletter-form-box .form_control::-moz-placeholder {
+  color: var(--white-color);
+}
+.luxivo-newsletter-sec .newsletter-form-box .form_control:-ms-input-placeholder {
+  color: var(--white-color);
+}
+.luxivo-newsletter-sec .newsletter-form-box .form_control::-ms-input-placeholder {
+  color: var(--white-color);
+}
+.luxivo-newsletter-sec .newsletter-form-box .form_control::placeholder {
+  color: var(--white-color);
+}
+.luxivo-newsletter-sec .newsletter-form-box .theme-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+.luxivo-newsletter-sec .newsletter-form-box .theme-btn.style-one {
+  padding: 14px 24px;
+}
+@media (max-width: 767.98px) {
+  .luxivo-newsletter-sec .newsletter-form-box .theme-btn {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-top: 30px;
+  }
+}
+
 /*========================
     Contact Section  CSS
 ==========================*/
+.luxivo-contact_three {
+  position: relative;
+  z-index: 1;
+}
+.luxivo-contact_three:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(22, 25, 33, 0.89);
+  z-index: -1;
+}
+.luxivo-contact_three .contact-wrapper {
+  padding: 110px 60px 120px;
+  background-color: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(22px);
+}
+.luxivo-contact_three .booking-form label {
+  color: #D8D8DC;
+  display: block;
+  margin-bottom: 10px;
+}
+.luxivo-contact_three .booking-form .form_control, .luxivo-contact_three .booking-form .nice-select {
+  background-color: transparent;
+  border: 1px solid #D8DDE1;
+  color: #D8D8DC;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.luxivo-contact_three .booking-form .nice-select .list li {
+  color: var(--heading-color);
+}
+.luxivo-contact_three .booking-form .form_control::-webkit-input-placeholder {
+  color: #D8D8DC;
+}
+.luxivo-contact_three .booking-form .form_control::-moz-placeholder {
+  color: #D8D8DC;
+}
+.luxivo-contact_three .booking-form .form_control:-ms-input-placeholder {
+  color: #D8D8DC;
+}
+.luxivo-contact_three .booking-form .form_control::-ms-input-placeholder {
+  color: #D8D8DC;
+}
+.luxivo-contact_three .booking-form .form_control::placeholder {
+  color: #D8D8DC;
+}
+.luxivo-contact_three .booking-form .theme-btn {
+  width: 100%;
+}
+.luxivo-contact_three .map-box iframe {
+  height: 750px;
+  border-radius: 30px;
+}
+
 .luxivo-contact_one {
   position: relative;
   background-color: var(--gray-color);
