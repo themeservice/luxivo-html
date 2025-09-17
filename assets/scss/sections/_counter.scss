@@ -29,8 +29,10 @@
         }
     }
 }
+
 .luxivo-counter-item{
     &.style-one{
+        text-align: center;
         & .content{
             & h2{
                 font-size: 64px;
@@ -38,6 +40,25 @@
             & p{
                 font-weight: 600;
                 font-size: 20px;
+            }
+        }
+    }
+    &.style-two{
+        & .content{
+            & h2{
+                font-size: 42px;
+                color: $primary-color;
+                margin-bottom: 10px;
+                @include respond(md){
+                    font-size: 28px;
+                }
+            }
+            & h5{
+                font-size: $h5-font;
+                color: $text-color;
+                @include respond(md){
+                    font-size: 14px;
+                }
             }
         }
     }

@@ -1,9 +1,9 @@
 
 /*----------------------------------------------------------------------------------- 
 
-Template Name: Bizzen - Business Consulting HTML Template
+Template Name: Luxivo - Hotel & Resort Booking HTML5 Template
 URI: https://nayonacademy.com/
-Description: Bizzen – Business Consulting HTML5 Template is a modern, clean, and fully responsive HTML5 template designed for business consulting, finance, corporate, and professional services websites.
+Description: Luxivo is a modern, elegant, and fully responsive HTML template designed specifically for hotels, resorts, villas, guest houses, and all kinds of accommodation booking websites. With a clean layout and user-friendly design, Luxivo makes it simple for your customers to explore rooms, check availability, and make reservations with ease.
 Author: Themeservices
 Author URI: https://themeforest.net/user/themeservices
 Version: 1.0 
@@ -23,16 +23,19 @@ Version: 1.0
     # Sections
        # Header CSS
        # Hero Section CSS
+       # Search Section CSS
+       # Elements CSS
        # About Section CSS
        # Features Section CSS
        # Service Section CSS
        # Counter Section CSS
-       # Process Section CSS
-       # Project Section CSS
+       # Gallery Section CSS
+       # Room Section CSS
        # Pricing Section CSS
        # Faq Section CSS
+       # Team Section CSS
        # Testimonial Section CSS
-       # Company Section CSS
+       # Blog Section CSS
        # CTA Section CSS
        # Contact Section CSS
        # Error Section CSS
@@ -52,11 +55,12 @@ Version: 1.0
 @import 'components/buttons';
 @import 'sections/header';
 @import 'sections/hero';
+@import 'sections/search';
+@import 'sections/elements';
 @import 'sections/about';
 @import 'sections/features';
 @import 'sections/service';
 @import 'sections/counter';
-@import 'sections/process';
 @import 'sections/gallery';
 @import 'sections/room';
 @import 'sections/pricing';
@@ -64,7 +68,6 @@ Version: 1.0
 @import 'sections/team';
 @import 'sections/testimonial';
 @import 'sections/blog';
-@import 'sections/company';
 @import 'sections/cta';
 @import 'sections/contact';
 @import 'sections/error';

@@ -6,13 +6,67 @@
 
 .luxivo-faq_two{
     & .luxivo-image{
+        position: relative;
         margin-right: -55px;
+        & img{
+            width: 100%;
+        }
+        @include respond(xxxl){
+            margin-right: 0;
+        }
+        & .luxivo-contact-info-box{
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            background-color: $primary-black-color;
+            border-radius: 30px;
+            padding: 35px 40px;
+            max-width: 300px;
+            & .content{
+                & h4{
+                    font-size: $h4-font;
+                    color: $white-color;
+                    &:after{
+                        display: block;
+                        content: '';
+                        width: 75px;
+                        height: 1px;
+                        background-color: $primary-color;
+                        margin-top: 10px;
+                        margin-bottom: 20px;
+                    }
+                }
+                & .check-list{
+                    &.style-one{
+                        & li{
+                            color: $white-color;
+                            &:not(:last-child){
+                                margin-bottom: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         & img{
             border-radius: 30px;
         }
     }
     & .luxivo-content-box{
         padding-left: 80px;
+        @include respond(xxxl){
+            padding-left: 0;
+        }
+    }
+}
+
+.luxivo-faq-sec {
+    & .luxivo-content-box{
+        & h2{
+            @include respond(md){
+                font-size: 28px;
+            }
+        }
     }
 }
 
@@ -62,25 +116,6 @@
         }
         & .accordion-content{
             padding-bottom: 0;
-        }
-    }
-}
-
-
-.luxivo-offer-sec{
-    & .luxivo-image{
-        & img{
-            border-radius: 250px;
-        }
-    }
-    & .luxivo-content-item{
-        border: 1px solid $border-color;
-        padding: 15px 24px;
-        border-radius: 20px;
-        & .content{
-            & h5{
-                margin-bottom: 20px;
-            }
         }
     }
 }

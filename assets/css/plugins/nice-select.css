@@ -4,7 +4,7 @@
 	clear: both;
 	cursor: pointer;
 	display: block;
-	float: left;
+	/* float: left; */
 	font-family: inherit;
 	font-weight: normal;
 	line-height: 40px;

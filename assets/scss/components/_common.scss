@@ -59,7 +59,20 @@ label{
 .gray-color{
     background-color: $gray-color;
 }
-
+.nice-select{
+    cursor: pointer;
+    &:after{
+        position: absolute;
+        right: 20px;
+        content: "\f107";
+        font-family: 'Font Awesome 5 Pro';
+    }
+}
+.ratings{
+    & i{
+        color: #FF9500;
+    }
+}
 /* Section Title */
 
 .sub-title{
@@ -76,6 +89,7 @@ label{
         margin-bottom: 13px;
     }
     & h2{
+        font-size: $h2-font;
         margin-bottom: 20px;
         @include respond(lg){
             font-size: 40px;
@@ -101,13 +115,13 @@ label{
 .check-list{
     & li{
         color: $heading-color;
+        font-size: 16px;
+        line-height: 26px;
     }
     &.style-one{
         & li{
             display: flex;
             align-items: center;
-            line-height: 1;
-             color: $heading-color;
             &:not(:last-child){
                 margin-bottom: 25px;
             }
@@ -164,15 +178,6 @@ label{
 
 .zoomInOut{
     animation: zoomInOut 6s linear infinite;
-}
-
-
-/* Ratings */ 
-
-.ratings{
-    & i{
-        color: $secondary-color;
-    }
 }
 
 /* Switch Box */
@@ -253,5 +258,31 @@ label{
                 }
             }
         }
+    }
+}
+
+
+/*====== Start Back to top css ======*/
+
+.back-to-top {
+    border-radius: 50%;
+    bottom: 30px;
+    cursor: pointer;
+    display: none;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+    right: 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: .3s;
+    z-index: 337;
+    color: $white-color;
+    background-color: $primary-color;
+    &:hover{
+        background-color: $primary-color;
+        color: $white-color;
     }
 }

@@ -9,6 +9,7 @@
         color: $white-color;
         margin-bottom: 23px;
         position: relative;
+        font-size: $h4-font;
         & .line{
             position: relative;
             display: flex;
@@ -61,6 +62,31 @@
                 }
             }
         }
+        & .social-box{
+            & h5{
+                font-size: $h5-font;
+                color: $white-color;
+                margin-bottom: 15px;
+            }
+            & a{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 1px solid $white-color;
+                color: $white-color;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                &:not(:last-child){
+                    margin-right: 10px;
+                }
+                &:hover{
+                    background-color: $primary-color;
+                    color: $white-color;
+                    border-color: transparent;
+                }
+            }
+        }
     }
     &.footer-nav-widget{
         & ul.widget-nav{
@@ -106,6 +132,13 @@
             }
         }
     }
+    &.footer-contact-widget{
+        & .widget-content{
+            & .luxivo-info-box{
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
 
 .luxivo-info-box{
@@ -135,6 +168,23 @@
                 font-weight: 600;
                 font-family: $body-font;
             }
+        }
+    }
+    &.style-two{
+        display: flex;
+        align-items: center;
+        & .icon{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid $border-color;
+            color: $white-color;
+            font-size: 12px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 auto;
+            margin-right: 15px;
         }
     }
 }

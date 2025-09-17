@@ -31,6 +31,21 @@
             width: 290px;
             height: 290px;
             border-radius: 50%;
+            @include respond(xxxl){
+                height: 250px;
+            }
+            @include respond(xl){
+                height: 290px;
+            }
+            @include respond(lg){
+                height: 220px;
+            }
+            @include respond(md){
+                height: 290;
+            }
+            @include respond(sm){
+                height: 230px;
+            }
         }
     }
     & .member-info{
@@ -84,6 +99,8 @@
     }
 }
 
+/* Skill Section */ 
+
 .luxivo-skill-item{
     & .progress-title{
         & h6{
@@ -103,6 +120,8 @@
     }
 }
 
+/* Team Details Wrapper */ 
+
 .team-details-wrapper{
     & .luxivo-team-main{
         padding: 30px;
@@ -115,6 +134,10 @@
         }
         & .member-info{
             padding-left: 30px;
+            @include respond(lg){
+                padding-left: 0;
+                margin-top: 40px;
+            }
             & .position{
                 margin-bottom: 23px;
             }

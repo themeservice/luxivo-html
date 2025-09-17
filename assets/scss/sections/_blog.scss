@@ -3,6 +3,13 @@
     Blog Section  CSS
 =======================*/
 
+.luxivo-blog-list{
+    padding-left: 40px;
+    @include respond(xl){
+        padding-left: 0;
+    }
+}
+
 .luxivo-blog-post-item{
     .post-meta{
         margin-bottom: 10px;
@@ -27,6 +34,7 @@
     &.style-one{
         & .post-thumbnail{
             & img{
+                width: 100%;
                 border-radius: 30px;
             }
         }
@@ -35,8 +43,12 @@
             & h4{
                 margin-bottom: 25px;
                 line-height: 34px;
+                font-size: $h4-font;
                 &:hover{
                     color: $primary-color;
+                }
+                @include respond(xl){
+                    font-size: 18px;
                 }
             }
         }
@@ -64,12 +76,20 @@
     &.style-three{
         display: flex;
         align-items: center;
+        @include respond(md){
+            flex-direction: column;
+            align-items: flex-start;
+        }
         & .post-thumbnail{
             position: relative;
             flex: 0 0 auto;
             max-width: 185px;
             width: 100%;
             margin-right: 30px;
+            @include respond(md){
+                margin-right: 0;
+                margin-bottom: 25px;
+            }
             & img{
                 border-radius: 20px;
                 width: 100%;
@@ -89,9 +109,16 @@
         }
         & .post-content{
             & .post-meta{
-                padding-bottom: 20px;
-                margin-bottom: 20px;
+                padding-bottom: 10px;
+                margin-bottom: 18px;
                 border-bottom: 1px solid $border-color;
+            }
+            & .title{
+                font-size: $h4-font;
+                line-height: 34px;
+                &:hover{
+                    color: $primary-color;
+                }
             }
         }
     }
@@ -118,9 +145,16 @@
         & .post-content{
             padding-top: 20px;
             & .post-meta{
-                padding-bottom: 20px;
-                margin-bottom: 20px;
+                padding-bottom: 10px;
+                margin-bottom: 18px;
                 border-bottom: 1px solid $border-color;
+            }
+            & .title{
+                font-size: $h4-font;
+                line-height: 34px;
+                &:hover{
+                    color: $primary-color;
+                }
             }
         }
     }
@@ -251,6 +285,9 @@
         }
         & .post-thumbnail{
             margin-bottom: 30px;
+            & img{
+                border-radius: 30px;
+            }
         }
         & .post-content{
             & .title{
@@ -307,6 +344,7 @@
             & .luxivo-image{
                 margin-bottom: 30px;
                 & img{
+                    border-radius: 30px;
                     width: 100%;
                 }
             }
