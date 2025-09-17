@@ -24,6 +24,11 @@
         align-items: center;
         justify-content: space-between;
     }
+    & .site-branding{
+        @include respond(md){
+            max-width: 150px;
+        }
+    }
     & .main-menu{
         & ul{
             & > li{
