@@ -3096,6 +3096,7 @@ label {
 }
 .luxivo-choose-sec .luxivo-image img {
   width: 100%;
+  border-radius: 30px;
 }
 .luxivo-choose-sec .luxivo-image .luxivo-happy-client {
   position: absolute;
@@ -4053,6 +4054,12 @@ label {
 }
 
 .luxivo-room-wrapper .luxivo-room-item.style-three:nth-child(even) .row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.luxivo-room-wrapper .luxivo-room-item.style-three:nth-child(even) .room-image {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
