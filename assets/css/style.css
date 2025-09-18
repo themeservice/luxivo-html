@@ -3028,7 +3028,7 @@ label {
 }
 .luxivo-facilities_one .luxivo-content-box .iconic-box-wrapper {
   margin-bottom: 40px;
-  border: 1px solid var(--primary-color);
+  border: 1px solid #d8dde1;
   border-radius: 30px;
   padding: 30px;
 }
