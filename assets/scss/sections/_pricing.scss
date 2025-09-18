@@ -76,6 +76,7 @@
         }
         & .pricing-body{
             background-color: $heading-color;
+            border-color: $primary-color;
             & .check-list{
                 &.style-one{
                     & li{

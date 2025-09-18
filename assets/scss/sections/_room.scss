@@ -18,6 +18,39 @@
             }
         }
     }
+    & .room-arrows{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+        @include respond(lg){
+            justify-content: flex-start;
+        }
+        & .slick-arrow{
+            width: 55px;
+            height: 55px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid $border-color;
+            color: $white-color;
+            z-index: 1;
+            cursor: pointer;
+            transition: all .3s;
+            @include respond(xl){
+                border-color: $primary-color;
+                color: $primary-color;
+                &:hover{
+                    color: $white-color;
+                }
+            }
+            &:hover{
+                background-color: $primary-color;
+                border-color: transparent;
+            }
+        }
+    }
     & .room-bg{
         position: absolute;
         top: 0;
@@ -104,11 +137,15 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        cursor: pointer;
         gap: 20px;
         & li{
             padding: 18px 30px;
             line-height: 1;
             border-radius: 10px;
+            font-size: 14px;
+            color: $heading-color;
+            font-weight: 700;
             border: 1px solid $border-color;
             transition: all .3s;
             &:hover,
@@ -357,8 +394,8 @@
                     width: 100%;
                     width: 90%;
                     border-radius: 20px;
-                    background-color: rgba(109, 124, 106, 0.60);
-                    backdrop-filter: blur(9px);
+                    background-color: rgba(22, 25, 33, 0.60);
+                    backdrop-filter: blur(44px);
                     padding: 20px;
                     transition: all .3s;
                     & h4{
@@ -381,8 +418,8 @@
                 width: 100%;
                 width: 90%;
                 border-radius: 20px;
-                background-color: rgba(109, 124, 106, 0.60);
-                backdrop-filter: blur(9px);
+                background-color: rgba(22, 25, 33, 0.60);
+                backdrop-filter: blur(44px);
                 padding: 20px;
                 transition: all .5s;
                 & .ratings{

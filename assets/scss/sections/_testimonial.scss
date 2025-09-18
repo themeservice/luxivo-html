@@ -152,9 +152,9 @@
         border: 1px solid $border-color;
         padding: 40px;
         border-radius: 30px;
+        border-top: 4px solid transparent;
         transition: all .3s;
         &:hover{
-            border-top: 4px solid;
             border-color: $primary-color;
         }
         & .testimonial-content{

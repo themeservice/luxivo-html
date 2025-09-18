@@ -125,6 +125,14 @@
             mainClass: 'mfp-fade'
         });
     }
+    if ($('.img-popup').length){
+            $(".img-popup").magnificPopup({
+                type: "image",
+                 gallery: { 
+                  enabled: true 
+                }
+            });
+        }
 
     //===== Slick Slider
 
@@ -177,16 +185,18 @@
         });
     }
     if ($('.room-slider').length) {
+        var sliderArrows = $('.room-arrows');
         $('.room-slider').slick({
             dots: false,
-            arrows: false,
+            arrows: true,
             infinite: true,
             speed: 800,
+            appendArrows: sliderArrows,
             autoplay: true,
             slidesToShow: 4,
             slidesToScroll: 1,
-            prevArrow: '<div class="prev"><i class="far fa-angle-left"></i></div>',
-            nextArrow: '<div class="next"><i class="far fa-angle-right"></i></div>',
+            prevArrow: '<div class="prev"><i class="far fa-arrow-left"></i></div>',
+            nextArrow: '<div class="next"><i class="far fa-arrow-right"></i></div>',
             responsive: [
                 {
                     breakpoint: 1200,
@@ -557,7 +567,8 @@
     //====== Aos 
     
     AOS.init({
-        offset: 0
+        offset: 0,
+        mirror: true,
     });
 
     //===== Dynamic Background

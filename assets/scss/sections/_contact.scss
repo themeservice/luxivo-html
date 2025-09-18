@@ -16,6 +16,14 @@
             padding: 30px 15px;
         }
         & .booking-form{
+            & label{
+                color: $heading-color;
+                margin-bottom: 10px;
+                font-weight: 500;
+            }
+            & input[type="date"]{
+                color: $text-color;
+            }
             & .form_control{
                 padding: 12px 25px;
                 border: 1px solid $border-color;
@@ -123,6 +131,10 @@
                 color: #D8D8DC;
             }
         }
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+            cursor: pointer;
+        }
         & .theme-btn{
             width: 100%;
         }
@@ -164,7 +176,7 @@
         border: 1px solid $white-color;
         border-radius: 20px;
         padding: 35px 30px 40px;
-        & .bizzen-info-box{
+        & .luxivo-info-box{
             &:not(:last-child){
                 margin-bottom: 50px;
             }

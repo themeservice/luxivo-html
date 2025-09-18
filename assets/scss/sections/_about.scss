@@ -150,6 +150,9 @@
                 position: absolute;
                 bottom: 0;
                 right: 0;
+                & img{
+                    border: 6px solid $white-color;
+                }
                 @include respond(md){
                     position: relative;
                     bottom: auto;

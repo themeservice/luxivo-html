@@ -13,11 +13,8 @@
         & .icon{
             position: relative;
             margin-bottom: 55px;
-            & .hover-icon{
-                position: absolute;
-                top: 0;
-                left: 0;
-                opacity: 0;
+            & img{
+                transition: filter 0.3s ease;
             }
         }
         & .content{
@@ -47,11 +44,8 @@
         &:hover{
             background-color: $primary-color;
             & .icon{
-                & .main-icon{
-                    opacity: 0;
-                }
-                & .hover-icon{
-                    opacity: 1;
+                & img{
+                    filter: brightness(0) invert(1);
                 }
             }
             & .content{
@@ -246,6 +240,25 @@
             & img{
                 border-radius: 30px;
             }
+            &.image_one{
+                position: relative;
+                overflow: hidden;
+                max-width: 455px;
+                & .shape{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                & .overlay{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(16, 29, 34, 0.60);
+                    border-radius: 30px;
+                }
+            }
             &.image_two{
                 position: absolute;
                 bottom: 75px;
@@ -278,6 +291,9 @@
         }
         & .iconic-box-wrapper{
             margin-bottom: 40px;
+            border: 1px solid $primary-color;
+            border-radius: 30px;
+            padding: 30px;
             & .item-column{
                 &:not(:last-child){
                     border-right: 1px solid $border-color;
